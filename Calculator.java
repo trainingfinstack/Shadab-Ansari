@@ -18,6 +18,7 @@ class Calculator{
     System.out.println(c);
   }
 }
+class Main{
 public static void main(String args[]){
     int a=10,b=5;
     Calculator cl=new Calculator();
@@ -25,4 +26,5 @@ public static void main(String args[]){
   cl.minus(a,b);
   cl.multiplication(a,b);
   cl.division(a,b);
+}
 }
