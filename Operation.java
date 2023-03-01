@@ -7,7 +7,6 @@ public class Operation {
 	ArrayList<Employee> a=new ArrayList<Employee>();
 	Scanner s=new Scanner(System.in);
 	Scanner s1=new Scanner(System.in);
-	Scanner s2=new Scanner(System.in);
 	int pid;
 	Iterator<Employee> i;
 	boolean found =false;
@@ -20,7 +19,7 @@ public class Operation {
 		System.out.print("Enter person Name: ");
 		pname=s1.nextLine();
 		System.out.print("Enter city Name: ");
-		pcity=s2.nextLine();
+		pcity=s1.nextLine();
 		a.add(new Employee(pid,pname,pcity));
 		
 	}
