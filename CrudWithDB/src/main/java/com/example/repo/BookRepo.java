@@ -5,5 +5,5 @@ import org.springframework.stereotype.Component;
 import com.example.models.Book;
 @Component
 public interface BookRepo extends JpaRepository<Book,Long>  {
-
+ public Book findBybookName(String bookName);
 }
