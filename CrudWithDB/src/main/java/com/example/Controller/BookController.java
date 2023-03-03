@@ -25,7 +25,7 @@ public class BookController {
 	}
 	@GetMapping("getByBookName/{name}")
 	public Book getBook(@PathVariable("name") String bookName){
-		return (Book bookRepository.findBybookName(bookName);
+		return bookRepository.findBybookName(bookName);
 	}
 	@GetMapping("/getByBookId/{bookId}")
 	public Optional<Book> getBookId(@PathVariable("bookId") Long id) {
