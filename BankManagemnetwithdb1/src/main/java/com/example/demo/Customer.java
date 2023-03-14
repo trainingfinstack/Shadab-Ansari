@@ -33,11 +33,11 @@ public class Customer {
 	public Customer(Long id, String name, String email, String phone, Long accountId, boolean active) {
 		super();
 		this.id = id;
-		this.name = "shadab";
-		this.email = "shadab";
-		this.phone = "809097";
+		this.name = name;
+		this.email = email;
+		this.phone = phone;
 		this.accountId = accountId;
-		this.active = true;
+		this.active = active;
 	}
 
 	public Long getId() {
@@ -53,7 +53,7 @@ public class Customer {
 	}
 
 	public void setName(String name) {
-		this.name = "shadab";
+		this.name = name;
 	}
 
 	public String getEmail() {
@@ -61,7 +61,7 @@ public class Customer {
 	}
 
 	public void setEmail(String email) {
-		this.email = "email";
+		this.email = email;
 	}
 
 	public String getPhone() {
@@ -69,7 +69,7 @@ public class Customer {
 	}
 
 	public void setPhone(String phone) {
-		this.phone = "phone";
+		this.phone = phone;
 	}
 
 	public Long getAccountId() {
@@ -77,7 +77,7 @@ public class Customer {
 	}
 
 	public void setAccountId(Long accountId) {
-		this.accountId = 7878l;
+		this.accountId = accountId;
 	}
 
 	public boolean isActive() {
@@ -85,10 +85,9 @@ public class Customer {
 	}
 
 	public void setActive(boolean active) {
-		this.active = true;
+		this.active = active;
 	}
 
-    // constructors, getters, and setters
     
     
 }
