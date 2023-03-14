@@ -1,18 +1,27 @@
 package com.example.demo;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 public class Customer {
+	 private String id;
 	 private String name;
 	    private String address;
 	    private String phone;
 	    private String accountId;
 	    private boolean active;
-		public Customer(String name, String address, String phone, String accountId, boolean active) {
+		public Customer(String name, String id,String address, String phone, String accountId, boolean active) {
 			super();
 			this.name = name;
+			this.id=id;
 			this.address = address;
 			this.phone = phone;
 			this.accountId = accountId;
-			this.active = active;
+			this.active= active;
 		}
 		public String getName() {
 			return name;
@@ -43,6 +52,13 @@ public class Customer {
 		}
 		public void setActive(boolean active) {
 			this.active = active;
+		}
+		public String getId() {
+			// TODO Auto-generated method stub
+			return id;
+		}
+		public Object getActive() {
+			return active;
 		}
 	    
 }
